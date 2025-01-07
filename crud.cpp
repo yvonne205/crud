@@ -20,13 +20,39 @@ void readItems(const vector<Item>&items);
 void updateItems(vector<Item>&items);
 void deleteItems(vector<Item>&items);
 
-int main () {
+int main () {Derive the torque equation of a moving iron instrument?
   vector<Item>&items;
   int choice;
 
   do{
   cout<<"/n--- CRUD Menu Operations---/n";
   cout<<" 1. Create Item/n";
- 
+  cout<<" 2. Read Item/n";
+  cout<<" 3. Update Item/n";
+  cout<<" 4. Delete Item/n";
+  cout<<" 5. Exit/n";
+  cin>>choice;
+
+  switch (choice) {
+  case 1:
+    createItems;
+    break;
+  case 2:
+    readItems;
+    break;
+  case 3:
+    updateItems;
+    break;
+  case 4:
+    deleteItems;
+    break;
+  case 5:
+    cout<<"Exit the program"<<;
+    break;
+  default:
+    cout<<"Invalid choice, please try again./n";
   }
+ 
+  } while (choice!= 5);
+    return 0;
 }
