@@ -56,3 +56,19 @@ int main () {Derive the torque equation of a moving iron instrument?
   } while (choice!= 5);
     return 0;
 }
+
+//create new item//
+void createItems(vector<Item>&item) {
+Item newItem;
+cout<<"Enter Item ID:";
+cin>>newItem.id;
+cin.ignore ();
+cout<<"Enter Item name:";
+getline(cin,newItem.name);
+cout<<"Enter Item Price:";
+cin>>newItem.newItem.price;
+
+items.push_back (newItem);
+coutt<<"Item created successfully!";
+
+}
