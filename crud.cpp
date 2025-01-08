@@ -72,3 +72,16 @@ items.push_back (newItem);
 coutt<<"Item created successfully!";
 
 }
+//Read and display all items//
+void readItems(const vector<Item>&items) {
+  if (items.empty ()) {
+cout<<"Item not found!";
+} else {
+cout<<"/n--- Item list---/n";
+for(const auto&item:items) {
+  item.display ();
+}
+
+}
+
+}
