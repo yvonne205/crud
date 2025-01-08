@@ -85,3 +85,21 @@ for(const auto&item:items) {
 }
 
 }
+//update an item//
+void updateItems(vector<Item>&item) {
+  int id;
+  cout<<"/nEnter Item ID to update/n";
+  cin>>id;
+
+  for(auto&items:items){
+    if(item.id == id) {
+      cin.ignore ();
+      cout<<"Enter Item name: ";
+      getline(cin,item.name);
+      cout<<"Enter ID Price: ";
+      cin>>newItem.price;
+      cout<<"Item updated successfully!";
+      return;
+      }
+    } cout<<"Item with ID":<<id<<" not found/n";
+}
