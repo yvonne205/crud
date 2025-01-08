@@ -103,3 +103,20 @@ void updateItems(vector<Item>&item) {
       }
     } cout<<"Item with ID":<<id<<" not found/n";
 }
+
+//delete an item//
+void deleteItems(vector<Item>&items) {
+  int id;
+  cout<<"Enter Item Id to be deleted: ";
+  cin>>id;
+
+  for(auto it = items.begin (); it != items.end (); ++ it) {
+    if (it-> id == id) {
+      items.erase (it);
+      cout<<"Item deleted successsfully!";
+      return;
+      }
+    } cout<<"Item with ID: "<<id<<" not found;
+
+
+}
