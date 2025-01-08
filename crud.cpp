@@ -59,28 +59,28 @@ int main () {Derive the torque equation of a moving iron instrument?
 
 //create new item//
 void createItems(vector<Item>&item) {
-Item newItem;
-cout<<"Enter Item ID:";
-cin>>newItem.id;
-cin.ignore ();
-cout<<"Enter Item name:";
-getline(cin,newItem.name);
-cout<<"Enter Item Price:";
-cin>>newItem.newItem.price;
+  Item newItem;
+  cout<<"Enter Item ID:";
+  cin>>newItem.id;
+  cin.ignore ();  
+  cout<<"Enter Item name:";
+  getline(cin,newItem.name);
+  cout<<"Enter Item Price:";
+  cin>>newItem.newItem.price;
 
-items.push_back (newItem);
-coutt<<"Item created successfully!";
+  items.push_back (newItem);
+  coutt<<"Item created successfully!";
 
 }
 //Read and display all items//
 void readItems(const vector<Item>&items) {
   if (items.empty ()) {
-cout<<"Item not found!";
-} else {
-cout<<"/n--- Item list---/n";
-for(const auto&item:items) {
-  item.display ();
-}
+    cout<<"Item not found!";
+  } else {
+    cout<<"/n--- Item list---/n";
+      for(const auto&item:items) {
+      item.display ();
+    }
 
 }
 
