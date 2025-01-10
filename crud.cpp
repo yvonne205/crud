@@ -20,7 +20,7 @@ void readItems(const vector<Item>&items);
 void updateItems(vector<Item>&items);
 void deleteItems(vector<Item>&items);
 
-int main () {Derive the torque equation of a moving iron instrument?
+int main () 
   vector<Item>&items;
   int choice;
 
